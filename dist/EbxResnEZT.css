@@ -1,0 +1,60 @@
+html,
+body {
+  background: #C9CFC5 !important;
+  color: #2D2D34 !important;
+  font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Courier New", monospace !important;
+}
+
+.home {
+  min-height: 92vh;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.home-title {
+  margin: 0;
+  color: #2D2D34;
+  font-size: 72px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  opacity: 0;
+  transform: translateY(120px);
+  animation: titleMove 3.2s ease forwards;
+  text-align: center;
+}
+
+.home-nav {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  opacity: 0;
+  animation: navFade 1.2s ease forwards;
+  animation-delay: 3.2s;
+  background: rgba(45,45,52,0.08);
+  padding: 14px 18px;
+}
+
+.home-link {
+  color: #2D2D34;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+@keyframes titleMove {
+  0% { opacity: 0; transform: translateY(120px); }
+  35% { opacity: 1; transform: translateY(120px); }
+  100% { opacity: 1; transform: translateY(0px); }
+}
+
+@keyframes navFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

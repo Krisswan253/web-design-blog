@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Project 2 · Eleventy Base Blog v9</title>
+
+	<link rel="stylesheet" href="/web-design-blog">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+	<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	
+		<div class="topbar">
+			<a class="topbar-home" href="/web-design-blog/">Return to Home</a>
+		</div>
+	
+
+	<main id="main">
+		<h1 id="project-2">Project 2</h1>
+<h2 id="concept">Concept</h2>
+<p>Project #2 Concept - “The Earth is Breathing”</p>
+<p>Concept:</p>
+<p>visualizing the Earth as a living system by translating real environmental data into layered wave signals that behave like a pulse. Instead of presenting ocean and seismic data as numerical measurements, the site will reframe them as rhythms that reflect the planet’s constant movement between stability and disturbance.
+The ocean serves as the steady baseline rhythm (like a heartbeat), representing slow, continuous planetary processes, while earthquakes appear as sudden disruptions layered on top of this motion (anxiety? Pressure? Can represent emotions like that). By combining these systems into a single visualization, my idea was to treat the earth and the human experience as one, using the earth’s natural movement to fit it into the human EKG reading.
+APIs Used:
+National Oceanic and Atmospheric Administration (NOAA buoy data) https://www.ndbc.noaa.gov/data/realtime2/
+United States Geological Survey (USGS Earthquake API) https://earthquake.usgs.gov/fdsnws/event/1/</p>
+<p>Step 1 -  Establishing the baseline (could be ocean waves or something else?)
+Build the steady ocean wave using NOAA data.</p>
+<p>Smooth motion driven by:</p>
+<p>Scott’s idea?:
+amplitude = waveHeight mapping
+speed = wavePeriod mapping</p>
+<p>Create a foundational rhythm?</p>
+<p>Step 2  - Introduce disturbance (I feel like earthquakes is a strong contender for this aspect but if yall have diff ideas thats fine too)</p>
+<p>Add seismic layer using USGS data.</p>
+<p>Sharp spikes appear when earthquakes occur =  disrupting the baseline wave.</p>
+<p>Contrast between steady motion + sudden rupture becomes visible.</p>
+<p>Step 3 - fun add-ons
+Add layer toggles?
+Introduce subtle color shifts based on activity level?
+Refine motion to emphasize rhythm?
+Examples:
+Smooth transitions between values
+Make the baseline wave move with a clear repeating rhythm (ekg style)
+For earthquake: Slight variation instead of jitter
+Use gentle noise instead of harsh movement so it feels organic.
+Like breathing instead of shaking.</p>
+<p>Examples:
+https://codepen.io/denisharda/pen/GNaaKO
+https://editor.p5js.org/KaterinaMagarini/sketches/prnTtOJ29
+https://www.youtube.com/watch?v=okfZRl4Xw-c</p>
+
+	</main>
+
+	<script type="module" src="/web-design-blog"></script>
+</body>
+</html>
