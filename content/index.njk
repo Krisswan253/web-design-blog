@@ -6,21 +6,12 @@ const eleventyNavigation = {
 
 const numberOfLatestPostsToShow = 3;
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
+<section class="home">
+	<h1 class="home-title">SWANK.IT.BLOG</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
-
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+	<nav class="home-nav">
+		<a class="home-link" href="/blog/">Readings</a>
+	    <a class="home-link" href="/projects/">Projects</a>
+		<a class="home-link" href="/about/">About</a>
+	</nav>
+</section>
