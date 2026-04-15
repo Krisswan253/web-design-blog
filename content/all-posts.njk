@@ -1,0 +1,17 @@
+---js
+export default {
+	layout: "layouts/home.njk",
+	title: "All Posts",
+	description: "Archive of all blog posts",
+	eleventyNavigation: {
+		key: "All Posts",
+		order: 2
+	}
+};
+---
+
+<h1>All Posts</h1>
+
+{% set postslist = collections.posts %}
+{% set postslistCounter = collections.posts | length %}
+{% include "postslist.njk" %}
