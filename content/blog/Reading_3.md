@@ -1,7 +1,7 @@
 ---
 title: Reading 3
 description: Response to readings on platform power and algorithmic targeting
-date: 2026-03-
+date: 2026-03-18
 ---
 
 
