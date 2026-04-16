@@ -1,13 +1,13 @@
 ---
 title: The Earth is Breathing
 description: Project 2 Assignment by Kris, Gabby, Scott
-date: 2026-02-25
+date: 2026-03-25
 ---
 
 ## The Earth is Breathing Project links
- github code: https://github.com/gabasha00/wpd-project-2
+ [github code][https://github.com/gabasha00/wpd-project-2]
 
- live website: http://206.189.189.226:3000/
+ [live website][http://206.189.189.226:3000/]
 
 ## Kris' Contributions
 
