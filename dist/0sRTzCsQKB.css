@@ -1,0 +1,299 @@
+* {
+	box-sizing: border-box; 
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #000000;
+	color: #f5f1ea;
+	font-family: "Cantarell", sans-serif;
+	letter-spacing: 0.02em;
+}
+
+body {
+	max-width: 100%;
+}
+
+main {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 32px;
+}
+
+footer {
+	padding: 32px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+#skip-link {
+	text-decoration: none;
+	background-color: #000000;
+	color: #f5f1ea;
+	padding: 8px 14px;
+	border: 1px solid #f5f1ea;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 999;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px 32px;
+	border-bottom: 1px solid rgba(245, 241, 234, 0.2);
+	background-color: rgba(0, 0, 0, 0.9);
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+
+.home-link {
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #f5f1ea;
+	text-decoration: none;
+}
+
+.menu-box {
+	position: relative;
+}
+
+.menu-button {
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #5DB7DE;
+	cursor: pointer;
+	list-style: none;
+}
+
+.menu-button::-webkit-details-marker {
+	display: none;
+}
+
+.menu-box nav {
+	position: absolute;
+	right: 0;
+	top: 28px;
+}
+
+.nav {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	list-style: none;
+	padding: 15px;
+	margin: 0;
+	border: 1px solid rgba(245, 241, 234, 0.2);
+	background-color: #000000;
+	min-width: 120px;
+}
+
+.menu-box:not([open]) .nav {
+	display: none;
+}
+
+.nav a {
+	text-decoration: none;
+	color: #5DB7DE;
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.nav a:hover {
+	color: #ffffff;
+}
+
+.nav a[aria-current="page"] {
+	border-bottom: 1px solid #D0CD94;
+}
+h1,
+h2,
+h3 {
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: -0.03em;
+	margin-bottom: 16px;
+}
+
+h1 {
+	font-size: 80px;
+	line-height: 0.95;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	line-height: 1.7;
+	font-size: 16px;
+	max-width: 70ch;
+	margin-bottom: 20px;
+}
+
+a {
+	color: #5DB7DE;
+}
+
+a:hover {
+	color: #ffffff;
+}
+
+.postlist {
+	list-style: none;
+	padding: 0;
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 32px;
+}
+
+.postlist-item {
+	border: 1px solid rgba(245, 241, 234, 0.2);
+	padding: 24px;
+	min-height: 220px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.postlist-item:nth-child(even) {
+	transform: translateY(48px);
+}
+
+.postlist-item::before {
+	content: "";
+	width: 40px;
+	height: 2px;
+	background-color: #D0CD94;
+	display: block;
+	margin-bottom: 16px;
+}
+
+.postlist-date {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #a8a48d;
+}
+
+.postlist-link {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #f5f1ea;
+}
+
+.postlist-link:hover {
+	color: #5DB7DE;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin: 32px 0;
+}
+
+pre {
+	background-color: #111;
+	padding: 16px;
+	overflow-x: auto;
+	border: 1px solid rgba(245, 241, 234, 0.2);
+}
+
+code {
+	font-family: monospace;
+}
+
+.post-image {
+	width: 300px;      /* controls overall size */
+	height: auto;      /* keeps original proportions */
+	display: block;
+	margin: 20px auto;
+}
+.top {
+	margin-top: 60px;
+	margin-bottom: 100px;
+	max-width: 700px;
+	position: relative;
+	z-index: 1;
+}
+
+.small {
+	font-size: 11px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #b8b2a9;
+	margin-bottom: 15px;
+}
+
+.big {
+	font-size: 58px;
+	line-height: 0.9;
+	margin-bottom: 20px;
+	max-width: 420px;
+}
+
+.text {
+	font-size: 16px;
+	line-height: 26px;
+	color: #b8b2a9;
+	max-width: 500px;
+}
+
+.list {
+	margin-top: 40px;
+}
+
+.start {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #050505;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size: 28px;
+	line-height: 1.4;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #f5f1ea;
+	z-index: 1000;
+	animation: fadeOut 2.5s forwards;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
