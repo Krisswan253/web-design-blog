@@ -4,10 +4,11 @@ description: Project 2 Assignment by Kris, Gabby, Scott
 date: 2026-03-25
 ---
 
-## The Earth is Breathing Project links
- [github code][https://github.com/gabasha00/wpd-project-2]
+## The Earth is Breathing Project Links
 
- [live website][http://206.189.189.226:3000/]
+GitHub code: [View Repository](https://github.com/gabasha00/wpd-project-2)
+
+Live website: [Visit Site](http://206.189.189.226:3000/)
 
 ## Kris' Contributions
 
